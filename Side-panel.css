@@ -1,0 +1,82 @@
+.side-panel {
+
+  display: flex;
+  flex-direction: column;
+  width:250px;
+  margin-top: 170px;
+  background-color: rgb(248, 249, 250);
+  z-index: 0;
+  gap: 40px;
+  left: 0;
+}
+
+.contact-me-layout {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;   /* instead of row */
+  gap: 10px;
+  margin-left: 30px;                /* spacing between blocks */
+}
+.contact-me,.education,.expertise-head {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 25px;
+  font-weight: 25;
+  line-height: 1.2px;
+}
+.phone, .email, .website {
+  display: flex;
+  flex-direction: row;
+  align-items: normal;    
+  gap: 10px;     
+}
+.website-address {
+  width: 200px;
+  word-wrap: break-word;
+  white-space: normal;
+}
+.phone-no,.email-address,.website-address {
+  margin: 0;
+  font-weight: 400px;
+  font-size: 12px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pic {
+  height: 15px;
+  width: 15px;
+}
+
+/*  EDUCATION */
+
+.education-layout {
+  margin-left: 30px;
+}
+
+.institution,.degree {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.institution {
+  font-weight: lighter;
+  width: 200px;
+}
+.degree {
+  font-weight: bold;
+  width: 200px;
+
+}
+
+/* Expertise */
+
+.expertise-layout {
+  margin-left: 30px;
+  max-height: fit-content;
+}
+
+.expertise {
+  font-size: 13px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+
+}
