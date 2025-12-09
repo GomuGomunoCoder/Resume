@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'MyNewFont';
+    src: url('Signatura.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    gap: 160px;                  
+    height: 180px;
+    background-color: rgb(216, 230, 230);
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 250px 1px 50px rgba(0, 0, 0, 0.3);
+}
+
+.header img {
+    width: 150px;
+    border-radius: 70px;
+    object-fit: cover;
+    border: solid;
+    border-color: rgb(11, 71, 70);
+    box-shadow: 0 1px 70px rgba(0, 0, 0, 0.3);
+}
+
+.name-area {
+    display: flex;              
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;       
+}
+
+.name {
+    font-family: 'MyNewFont',sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-shadow: 0 0px 80px;
+    margin: 0;
+    
+}
+
+.quote{
+  font-family: Montserrat;
+  font-size: medium;
+  font-weight: 200;
+}
