@@ -60,6 +60,9 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
 }
 .N p,.i p,.r p,.o p,.s p,.h p,.R p,.S p {
     width: 10px;
@@ -75,4 +78,10 @@
 }
 .R,.S {
     margin-left: 15px;
+}
+
+.N:hover p, .i:hover p, .r:hover p, .o:hover p, .s:hover p, .h:hover p, .R:hover p, .S:hover p {
+    margin-left: 40px;
+    transition: margin-left 0.5s;
+    scale: 2;
 }

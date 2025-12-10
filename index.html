@@ -16,6 +16,7 @@
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
+    margin-top: 0;
     padding: 0;
 ">
 
@@ -135,5 +136,21 @@
         </div>
       </div>
     </div>
+  <script>
+  window.addEventListener("scroll", () => {
+    const mainPanel = document.querySelector(".main-panel");
+    const sidePanel = document.querySelector(".side-panel");
+
+    if (window.scrollY > 1) {
+      // Scrolling down → bring it above everything
+      mainPanel.style.zIndex = "500";
+      sidePanel.style.zIndex = "6000";
+    } else {
+      // Scrolling up → restore original
+      mainPanel.style.zIndex = "90";
+      sidePanel.style.zIndex = "0";
+    }
+  });
+  </script>
   </body>
 </html>
